@@ -1,0 +1,53 @@
+h1{
+    font-size: 70px;
+    font-family: 'Poppins', sans-serif;
+}
+h2,h3{
+        font-family: 'Poppins', sans-serif;
+}
+body{
+    font-family: 'Inter', sans-serif;
+     background-image: url("../img/prog.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.div-nombre{
+ background-color: rgba(40, 40, 40, 0.85);
+    color: white;
+    
+}
+/*@keyframes latido {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.03);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+.latido{
+    animation: latido 2.5s infinite ease-in-out;
+}*/
+
+@keyframes flotar {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-6px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.flotar{
+    animation: flotar 3s infinite ease-in-out;
+}

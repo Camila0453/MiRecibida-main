@@ -1,0 +1,329 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family:'Poppins', sans-serif;
+  min-height:100vh;
+}
+
+
+.pantalla-inicio{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  overflow:hidden;
+  background: linear-gradient(135deg, #ECE7D1, #DBCEA5, #ffe3f1);
+  padding:30px;
+}
+
+.mensaje-inicial{
+  max-width:900px;
+  animation: aparecerSuave 2s ease;
+}
+
+.linea1,
+.linea2,
+.linea3{
+  color:#8A7650;
+  margin-bottom:14px;
+  opacity:0;
+  animation: subirFade 1.2s ease forwards;
+}
+
+.linea1{
+  font-size:2rem;
+  font-weight:300;
+  animation-delay:0.3s;
+}
+
+.linea2{
+  font-size:2.1rem;
+  font-weight:400;
+  animation-delay:1.2s;
+}
+
+.linea3{
+  font-size:2.6rem;
+  font-weight:700;
+  color:#8A7650;
+  margin-top:18px;
+  animation-delay:2.1s;
+  animation-name: subirFade, latidoSuave;
+  animation-duration: 1.2s, 2.5s;
+  animation-delay: 2.1s, 3.5s;
+  animation-fill-mode: forwards, none;
+  animation-iteration-count: 1, infinite;
+}
+
+/* ---------------- SEGUNDA PÁGINA ---------------- */
+
+.pantalla-recibida{
+  font-family:'Poppins', sans-serif;
+  min-height:100vh;
+  overflow:hidden;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background: linear-gradient(135deg, #ffd1e8, #ffb6d9, #ffcce6);
+  position:relative;
+}
+
+.contenedor{
+  position:relative;
+  z-index:2;
+  text-align:center;
+  background: rgba(255,255,255,0.25);
+  border: 1px solid rgba(255,255,255,0.35);
+  backdrop-filter: blur(8px);
+  padding:50px 35px;
+  border-radius:25px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+  max-width:700px;
+  width:90%;
+  animation: aparecer 1.8s ease;
+}
+
+.texto1{
+  font-size: 2.1rem;
+  font-weight:300;
+  color:#7a2f56;
+  margin-bottom:10px;
+  animation: flotar 3s ease-in-out infinite;
+}
+
+.texto2{
+  font-size: 3.4rem;
+  font-weight:700;
+  color:#d63384;
+  margin-bottom:15px;
+  text-shadow: 0 0 10px rgba(255,255,255,0.6);
+  animation: latido 2s infinite;
+}
+
+.texto3{
+  font-size:1.1rem;
+  color:#6d2143;
+  margin-top:10px;
+}
+
+.nombre{
+  margin-top:18px;
+  font-size:1.35rem;
+  font-weight:600;
+  color:#8a305f;
+}
+
+.corazon{
+  position:absolute;
+  bottom:-50px;
+  font-size:24px;
+  animation: subir linear infinite;
+  opacity:0.8;
+  z-index:1;
+}
+
+.confetti{
+  position:absolute;
+  top:-20px;
+  width:12px;
+  height:12px;
+  opacity:0.9;
+  animation: caer linear infinite;
+  z-index:1;
+  border-radius:2px;
+}
+
+/* ---------------- ANIMACIONES ---------------- */
+
+@keyframes aparecer{
+  from{
+    opacity:0;
+    transform: translateY(25px) scale(0.97);
+  }
+  to{
+    opacity:1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes aparecerSuave{
+  from{
+    opacity:0;
+  }
+  to{
+    opacity:1;
+  }
+}
+
+@keyframes subirFade{
+  from{
+    opacity:0;
+    transform: translateY(30px);
+  }
+  to{
+    opacity:1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes latido{
+  0%{ transform: scale(1); }
+  50%{ transform: scale(1.06); }
+  100%{ transform: scale(1); }
+}
+
+@keyframes latidoSuave{
+  0%{ transform: scale(1); }
+  50%{ transform: scale(1.04); }
+  100%{ transform: scale(1); }
+}
+
+@keyframes flotar{
+  0%{ transform: translateY(0); }
+  50%{ transform: translateY(-8px); }
+  100%{ transform: translateY(0); }
+}
+
+@keyframes subir{
+  0%{
+    transform: translateY(0) scale(1);
+    opacity:0;
+  }
+  10%{
+    opacity:0.85;
+  }
+  100%{
+    transform: translateY(-110vh) scale(1.3);
+    opacity:0;
+  }
+}
+
+@keyframes caer{
+  0%{
+    transform: translateY(0) rotate(0deg);
+  }
+  100%{
+    transform: translateY(110vh) rotate(720deg);
+  }
+}
+
+@media (max-width: 768px){
+  .linea1{
+    font-size:1.4rem;
+  }
+
+  .linea2{
+    font-size:1.5rem;
+  }
+
+  .linea3{
+    font-size:2rem;
+  }
+
+  .texto1{
+    font-size:1.6rem;
+  }
+
+  .texto2{
+    font-size:2.5rem;
+  }
+
+  .texto3{
+    font-size:1rem;
+  }
+
+  .nombre{
+    font-size:1.1rem;
+  }
+
+  .contenedor{
+    padding:40px 25px;
+  }
+}
+.modal{
+    display:none;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.6);
+    justify-content:center;
+    align-items:center;
+    z-index:1000;
+}
+
+.modal.mostrar{
+    display:flex;
+}
+
+.modal-contenido{
+    background:#fff;
+    padding:30px;
+    border-radius:15px;
+    width:90%;
+    max-width:450px;
+    position:relative;
+}
+
+.cerrar{
+    position:absolute;
+    top:15px;
+    right:20px;
+    font-size:28px;
+    cursor:pointer;
+}
+
+.modal input,
+.modal textarea{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border:1px solid #ccc;
+    border-radius:8px;
+    font-family:Poppins,sans-serif;
+}
+
+.modal button{
+    width:100%;
+    padding:12px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+}
+.contador-simple{
+
+    margin:35px auto 45px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:10px;
+
+    color:#F06E97;
+
+    font-weight:600;
+
+    font-size:1.15rem;
+
+}
+
+.contador-simple .material-symbols-outlined{
+
+    font-size:28px;
+    
+
+}
+
+#textoContador{
+
+    transition:.3s;
+
+}

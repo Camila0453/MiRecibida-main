@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>¡Me recibo!</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/inv.css">
+    <script defer src="js/inv.js"></script>
+
+
+</head>
+
+<body>
+
+    <div class="card">
+
+        
+
+        <p class="subtitulo">
+            Al fin llegó el momento...
+        </p>
+
+        <h1>
+            ¡Me recibo de Analista
+            de Sistemas!
+        </h1>
+
+        <p class="descripcion">
+
+            Después de años de esfuerzo, estudio y dedicación,
+            quiero compartir con ustedes este momento tan especial
+            y celebrar juntos este logro tan importante en mi vida. 
+
+        </p>
+
+        <div class="nombre">
+            Camila Aballay
+        </div>
+<div class="contador-simple" style="margin-bottom: 20px;">
+
+    <span class="material-symbols-outlined" style=" color:#8A7650;">
+        hourglass_top
+    </span>
+
+    <span id="textoContador">
+        Cargando cuenta regresiva...
+    </span>
+
+</div>
+        <!-- INFORMACIÓN DEL EVENTO -->
+
+        <div class="evento">
+
+            <div class="dato">
+
+                <span class="material-symbols-outlined">
+                    calendar_month
+                </span>
+
+                <h3>Fecha</h3>
+
+                <p>
+                    Lunes 6 de Julio de 2026
+                </p>
+
+            </div>
+
+            <div class="separador"></div>
+
+            <div class="dato">
+
+                <span class="material-symbols-outlined">
+                    schedule
+                </span>
+
+                <h3>Hora</h3>
+
+                <p>
+                    14:00 hs
+                </p>
+
+            </div>
+
+            <div class="separador"></div>
+
+            <div class="dato">
+
+                <span class="material-symbols-outlined">
+                    location_on
+                </span>
+
+                <h3>Lugar</h3>
+
+                <p>
+                    Universidad Nacional de la Patagonia Austral
+                
+                </p>
+
+            </div>
+
+        </div>
+
+        <!-- BOTONES -->
+
+        <div class="botones">
+
+            <a href="fotos.html">
+                 Ver fotos
+            </a>
+
+            <a href="#" id="abrirModal">
+                 Déjame un mensaje
+            </a>
+            
+
+            <a href="flora.html">
+                 Vistazo a mi Proyecto Final </a>
+            
+
+        </div>
+
+        </div>
+
+   <!-- Modal -->
+<div class="modal" id="modalMensaje">
+    <div class="modal-contenido">
+
+        <span class="cerrar" id="cerrarModal">&times;</span>
+
+        <h2>¡Dejame un mensaje!</h2>
+
+        <form  id="formMSJ" name="formMSJ" action="https://formspree.io/f/xkoayllr"
+  method="POST">
+
+            <input type="text" placeholder="Tu nombre" required name="name" id="name">
+
+            <textarea id="message" placeholder="Escribí tu mensaje..." rows="5" name="message" required></textarea>
+
+            <button type="submit">Enviar</button>
+
+        </form>
+
+    </div>
+</div>     
+<div class="modal" id="modalExito">
+
+    <div class="modal-confirmacion">
+<div class="icono-exito">
+    <span class="material-symbols-outlined">
+        task_alt
+    </span>
+</div>
+
+        <h2>¡Mensaje enviado!</h2>
+
+        <p>
+            Muchas gracias por dejarme un mensaje :)
+         
+        </p>
+        <p>   Lo voy a leer con mucho amor</p>
+
+        <button id="cerrarExito">
+            Aceptar
+        </button>
+
+    </div>
+
+</div>
+
+
+
+</body>
+
+</html>
