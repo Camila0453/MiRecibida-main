@@ -437,9 +437,12 @@ content:"";
     0 4px 10px rgba(0,0,0,.08);
 }
 
-.footer .material-symbols-outlined,
 .footer i{
-    font-size:18px;
+    color:#5D5138;
+}
+
+.footer .material-symbols-outlined{
+    color:#5D5138;
 }
 /* TECNOLOGÍAS */
 
@@ -829,7 +832,4 @@ content:"";
 
     /* FEATURES */
 
-   .footer a i{
-    color:#5D5138 !important;
-    font-size:18px;
-}
+   
