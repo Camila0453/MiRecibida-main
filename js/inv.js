@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", () => {
 let formMSJ= document.getElementById("formMSJ");
 
 formMSJ.addEventListener("submit", async(e)=>{
-  /*  e.preventDefault();
+   e.preventDefault();
     const modalExito = document.getElementById("modalExito");
 const cerrarExito = document.getElementById("cerrarExito");
     cerrarExito.addEventListener("click", () => {
@@ -82,17 +82,8 @@ modalExito.classList.add("mostrar");
     }
  }catch(error){
 console.log(error)
- }*/
- e.preventDefault();
-
-    // Simulación de envío exitoso
-    formMSJ.reset();
-
-    modal.classList.remove("mostrar");
-
-    modalExito.classList.add("mostrar");
-     formMSJ.reset();
-    modal.classList.remove("mostrar")
+ }
+ 
 
 
 })
