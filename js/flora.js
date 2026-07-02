@@ -1,8 +1,10 @@
 const imagenes = [
     "img/f1.jpg",
     "img/f4.jpg",
-    "img/ff.jpg",
+    "img/ff.png",
     "img/f2.jpg",
+    "img/fmisplantas.png",
+    "img/fubi.png",
 ];
 
 let indice = 0;
