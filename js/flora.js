@@ -3,8 +3,6 @@ const imagenes = [
     "img/f3.jpg",
     "img/f2.jpg",
     "img/ff.jpg",
-    "img/f5.jpg",
-    "img/f6.jpg"
 ];
 
 let indice = 0;
