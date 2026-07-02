@@ -1,8 +1,8 @@
 const imagenes = [
     "img/f1.jpg",
-    "img/f2.jpg",
     "img/f3.jpg",
-    "img/f4.jpg",
+    "img/f2.jpg",
+    "img/ff.jpg",
     "img/f5.jpg",
     "img/f6.jpg"
 ];
