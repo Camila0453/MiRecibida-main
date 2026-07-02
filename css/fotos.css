@@ -829,4 +829,7 @@ content:"";
 
     /* FEATURES */
 
-   
+   .footer a i{
+    color:#5D5138 !important;
+    font-size:18px;
+}
